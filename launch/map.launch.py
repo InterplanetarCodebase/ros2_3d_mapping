@@ -30,7 +30,7 @@ def generate_launch_description():
             'Mem/IncrementalMemory': 'true',
             'Mem/InitWMWithAllNodes': 'true' if localization else 'false',
 
-            # 2D Grid Map configuration
+            # 2D 
             'grid_map': 'true',
             'Grid/FromDepth': 'true',
             'Grid/MaxGroundHeight': '0.1',
@@ -45,7 +45,7 @@ def generate_launch_description():
             'Cloud/OutputVoxelized': 'true',
             'Cloud/VoxelSize': '0.05',
 
-            # Mapping improvements
+            # improvements
             'Rtabmap/TimeThr': '700',
             'RGBD/NeighborLinkRefining': 'true',
             'RGBD/OptimizeFromGraphEnd': 'false',
@@ -63,7 +63,7 @@ def generate_launch_description():
         ]
     )
 
-    # RViz2 for visualization
+    # RViz2
     rviz2 = Node(
         package='rviz2',
         executable='rviz2',
